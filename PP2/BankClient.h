@@ -11,7 +11,7 @@ public:
 private:
 	CBankClient(CBank *bank, unsigned id);
 	static unsigned GetSleepDuration(CBankClient *client);
-	static unsigned GetBalanceChangeValue();
+	static int GetBalanceChangeValue();
 	static DWORD WINAPI ThreadFunction(LPVOID lpParam);
 
 	friend CBank;
